@@ -1,0 +1,292 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'regular';
+  src: url("/font/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'light';
+  src: url("/font/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: 'semi';
+  src: url("/font/OpenSans-SemiBold.ttf");
+}
+
+#preload-wr {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+body {
+  overflow-x: hidden;
+  margin-bottom: 100px;
+}
+
+.pre-title {
+  font-size: 13px;
+  font-family: "regular";
+  color: #444343;
+  line-height: 1.625;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+body h3 {
+  margin-top: 70px;
+  font-family: 'regular';
+  font-weight: bold;
+  font-size: 30px;
+}
+
+body h5 {
+  font-size: 18px;
+}
+
+.one-slide {
+  background: url("/img/ff.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.two-slide {
+  background: url("/img/ff.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.three-slide {
+  background: url("/img/ff.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  padding: 0 5px;
+  height: 108px;
+}
+
+header .graf-phone {
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  height: 108px;
+  justify-content: center;
+}
+
+header .graf-phone .graf {
+  font-family: 'light';
+  font-size: 14px;
+}
+
+header .graf-phone a {
+  color: #272727;
+  font-size: 20px;
+}
+
+header .log-des {
+  height: 108px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+header .log-des img {
+  padding-top: 25px;
+}
+
+header .log-des p {
+  font-family: 'semi';
+}
+
+header .location-order .location i {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+}
+
+header .location-order .location i .loca {
+  font-family: 'semi';
+  font-size: 14px;
+  border-bottom: 1px dashed #272727;
+  padding-bottom: 4px;
+}
+
+header .location-order .order-btn a {
+  margin-top: 25px;
+}
+
+body .new_os .new_f-form-submit, body .new_f-dropdown-bottom-btn {
+  background: #e51c11 !important;
+  transition: 0.3s linear !important;
+  font-family: 'light' !important;
+  letter-spacing: 1px !important;
+}
+
+body .new_os .new_f-form-submit:hover, body .new_f-dropdown-bottom-btn:hover {
+  background: #be170f !important;
+}
+
+#nav-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-with-module {
+  position: relative;
+}
+
+.slider-with-module .new_f-container {
+  background: #fff;
+}
+
+.slider-with-module .new_f-title {
+  color: #272727;
+}
+
+.slider-with-module .carousel.carousel-slider .carousel-item h2 {
+  font-size: 40px;
+  margin-top: 55px;
+}
+
+.slider-with-module .modul-mainer {
+  position: absolute;
+  top: 290px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.slider-with-module .indicators {
+  position: absolute;
+  top: 213px;
+}
+
+.hot-proposites h3 {
+  color: #e51c11;
+}
+
+.hot-proposites .hottest {
+  margin-top: 60px;
+  padding: 0 10px;
+}
+
+.hot-proposites .hottest .card {
+  margin: 0 auto;
+  max-width: 370px;
+  margin-bottom: 40px;
+}
+
+.hot-proposites .hottest .card .card-image {
+  position: relative;
+  max-width: 370px;
+  height: 273px;
+  border-bottom: 2px solid #e51c11;
+  background: url("/img/ch.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hot-proposites .hottest .card .card-image .card-wrap {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.74), transparent);
+}
+
+.hot-proposites .hottest .card:hover {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+
+.hot-proposites .hottest .stronger-title-card {
+  text-align: left;
+  font-family: 'semi';
+  margin-bottom: 5px;
+}
+
+.hot-proposites .hottest .short-descrip {
+  text-align: left;
+  font-size: 13px;
+}
+
+.hot-proposites .hottest .price {
+  font-weight: 400;
+}
+
+.hot-proposites .hottest .price span {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.hot-proposites .hottest .hot-labla {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  left: inherit;
+  top: 0;
+}
+
+/*преимущества*/
+.our-pluses {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.our-pluses h3 {
+  margin-bottom: 50px;
+}
+
+.our-pluses .tali {
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+.our-pluses .tali .col .horizontal {
+  box-shadow: none;
+}
+
+.our-pluses .tali .col .card-content {
+  padding: 4px 10px 17px;
+}
+
+.our-pluses .tali .col .card-content h5 {
+  text-align: left;
+}
+
+.our-pluses .tali .col .card-content p {
+  text-align: left;
+  max-width: 270px;
+  font-size: 13px;
+}
+
+/*with form*/
+.with-form {
+  background: url("/img/bac.png") no-repeat;
+  background-position: center;
+  height: 640px;
+  background-size: cover;
+}
+
+.recomendation .recomendation-boxes .col {
+  border: 1px solid #e51c11;
+  min-height: 350px;
+}
+
+.recomendation .recomendation-boxes .col .card-image {
+  background: url("/img/ch.png");
+}
+/*# sourceMappingURL=style.css.map */

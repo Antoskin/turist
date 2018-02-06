@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/node_modules/materialize-css/dist/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div id="preload-wr"></div>
+
+    <header>
+        <div class="container hide-on-med-and-down">
+                <div class="row">
+                        <div class="col l4 graf-phone">
+                            <span class="graf">Работаем с 9:00 до 19:00</span>
+                            <a href="tel:+380446589909"><b>+38 (044) 658-99-09</b></a>
+                        </div>
+                        <div class="col l4 log-des">
+                            <img src="/img/l.png" alt="">
+                            <p>Туристическое агенство</p>
+                        </div>
+                        <div class="col l4 location-order">
+                                <div class="row">
+                                    <div class="col l6 location">
+                                            <i class="material-icons">location_on <span class="loca">Где купить тур?</span></i>
+                                    </div>
+                                    <div class="col l6 order-btn">
+                                            <a class="waves-effect waves-light btn-large">ЗАКАЗАТь ТУР</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+        </div> 
+    </header>
+      <nav>
+        <div class="nav-wrapper">
+        <!-- <a href="#" class="brand-logo">Logo</a> -->
+            <div class="container" >
+                    <ul id="nav-mobile" class="hide-on-med-and-down">
+                            <li><a href="#">Горящие туры</a></li>
+                            <li><a href="#">Календарь туров</a></li>
+                            <li><a href="#">Страны</a></li>
+                            <li><a href="#">Преимущества</a></li>
+                            <li><a href="#">Визы</a></li>
+                            <li><a href="#">Экскурсии</a></li>
+                            <li><a href="#">Где купить тур</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+            </div>
+        </div>
+    </nav>
+<!-- section with slider and search-module -->
+    <section class="slider-with-module">
+        
+            <div class="carousel carousel-slider center" data-indicators="true">
+                    <div class="one-slide carousel-item red white-text" href="#one!">
+                      <h2>ГОРНЫЙ ОТДЫХ В БОЛГАРИИ</h2>
+                      <p class="white-text">Только выгодные и уникальные предложения!</p>
+                    </div>
+                    <div class="two-slide carousel-item amber white-text" href="#two!">
+                      <h2>Second Panel</h2>
+                      <p class="white-text">This is your second panel</p>
+                    </div>
+                    <div class="three-slide carousel-item green white-text" href="#three!">
+                      <h2>Third Panel</h2>
+                      <p class="white-text">This is your third panel</p>
+                    </div>
+            </div>
+
+
+        <div class="container modul-mainer">
+            <div class="row">
+                <div class="col l12 m12 s12">
+                        <script>
+                                var osGeo = ''; /* страна, курорт или отель по умолчанию в форме поиска */
+                                var osTarget = ''; /* URL для отправки формы */
+                                var osContainer = null; /* Элемент DIV, в котором выводить результаты поиска */
+                                var osTourContainer = null; /* Элемент DIV, в котором выводить подробную информацию о туре */
+                                var osLang = 'ru'; /* язык интерфейса (ru|ua) */
+                                var osTourTargetBlank = true; /* Открывать страницу тура в новом окне? */
+                            </script>
+                            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic" rel="stylesheet">
+                            <link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/form.css" type="text/css" />
+                            <link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/result.css" type="text/css" />
+                            <link rel="Stylesheet" href="https://export.otpusk.com/os/onsite/tour.css" type="text/css" />
+                            <script src="https://export.otpusk.com/api/session?access_token=29cc5-186c3-49812-b50d4-60e5c"></script>
+                            <script src="https://export.otpusk.com/js/onsite/"></script>
+                            <script src="https://export.otpusk.com/js/order"></script>
+                </div>
+            </div>
+        </div>
+
+    </section> 
+
+    <section class="container hot-proposites center">
+        <h3>ГОРЯЩИЕ ПРЕДЛОЖЕНИЯ</h3>
+        <p class="pre-title">За все это время нам удалось собрать
+             профессиональную команду сотрудников, 
+             которые не только качественно выполняют
+              все задачи турагенства, но и смогли 
+              создать большой круг постоянных клиентов.
+               О нас можно услышать только хорошие и 
+               позитивные отзывы, поскольку мы работаем 
+               с проверенными и лучшими туроператорами 
+               Украины и мира.</p>
+
+
+        <div class="row hottest">
+            <div class="col l4 m6 s12">
+                    <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="hot-labla" src="/img/hot.png" alt="">
+                                <div class="card-wrap">
+                                    <span class="card-title">
+                                        <p class="the-title">Card title</p>
+                                        <p class="price">10000 <span>грн</span> </p>
+                                    </span>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="stronger-title-card">AMARIS NUSA DUA 3*</p>
+                                <p class="short-descrip">из Киева 25.12.2017, 10 ночей, питание BB,
+                                    цена за человека
+                                </p>
+                            </div>
+                    </div>
+            </div>
+            <div class="col l4 m6 s12">
+                    <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-wrap">
+                                    <span class="card-title">
+                                        <p class="the-title">Card title</p>
+                                        <p class="price">10000 <span>грн</span> </p>
+                                    </span>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="stronger-title-card">AMARIS NUSA DUA 3*</p>
+                                <p class="short-descrip">из Киева 25.12.2017, 10 ночей, питание BB,
+                                    цена за человека
+                                </p>
+                            </div>
+                    </div>
+            </div>
+            <div class="col l4 m6 s12">
+                    <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-wrap">
+                                    <span class="card-title">
+                                        <p class="the-title">Card title</p>
+                                        <p class="price">10000 <span>грн</span> </p>
+                                    </span>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="stronger-title-card">AMARIS NUSA DUA 3*</p>
+                                <p class="short-descrip">из Киева 25.12.2017, 10 ночей, питание BB,
+                                    цена за человека
+                                </p>
+                            </div>
+                    </div>
+            </div>
+            <div class="col l4 m6 s12">
+                    <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-wrap">
+                                    <span class="card-title">
+                                        <p class="the-title">Card title</p>
+                                        <p class="price">10000 <span>грн</span> </p>
+                                    </span>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="stronger-title-card">AMARIS NUSA DUA 3*</p>
+                                <p class="short-descrip">из Киева 25.12.2017, 10 ночей, питание BB,
+                                    цена за человека
+                                </p>
+                            </div>
+                    </div>
+            </div>
+            <div class="col l4 m6 s12">
+                    <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-wrap">
+                                    <span class="card-title">
+                                        <p class="the-title">Card title</p>
+                                        <p class="price">10000 <span>грн</span> </p>
+                                    </span>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="stronger-title-card">AMARIS NUSA DUA 3*</p>
+                                <p class="short-descrip">из Киева 25.12.2017, 10 ночей, питание BB,
+                                    цена за человека
+                                </p>
+                            </div>
+                    </div>
+            </div>
+            <div class="col l4 m6 s12">
+                    <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <div class="card-wrap">
+                                    <span class="card-title">
+                                        <p class="the-title">Card title</p>
+                                        <p class="price">10000 <span>грн</span> </p>
+                                    </span>
+                              </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="stronger-title-card">AMARIS NUSA DUA 3*</p>
+                                <p class="short-descrip">из Киева 25.12.2017, 10 ночей, питание BB,
+                                    цена за человека
+                                </p>
+                            </div>
+                    </div>
+            </div>
+           
+        </div>
+
+        <a class="waves-effect waves-light btn-large">ЗАГРУЗИТЬ ЕЩЕ</a>
+
+    </section>
+
+
+    <section class="container our-pluses center">
+            <h3>ПРЕИМУЩЕСТВА ОТДЫХА С НАМИ</h3>
+
+            <div class="tali">
+                <div class="row">
+                    <div class="col l6 m6 s12">
+                            <div class="card horizontal">
+                                    <div class="card-image">
+                                      <img src="/img/label.png">
+                                    </div>
+                                    <div class="card-stacked">
+                                      <div class="card-content">
+                                          <h5><b>НАДЁЖНОСТЬ</b></h5>
+                                            <p>У нас вы можете купить любой тур – от пляжного до лечебно-оздоровительного, а также заказать авиабилеты, визу и аренду транспорта.</p>
+                                      </div>
+                                     
+                                    </div>
+                                  </div>
+                    </div>
+                    <div class="col l6 m6 s12">
+                            <div class="card horizontal">
+                                    <div class="card-image">
+                                      <img src="/img/label.png">
+                                    </div>
+                                    <div class="card-stacked">
+                                      <div class="card-content">
+                                          <h5><b>НАДЁЖНОСТЬ</b></h5>
+                                            <p>У нас вы можете купить любой тур – от пляжного до лечебно-оздоровительного, а также заказать авиабилеты, визу и аренду транспорта.</p>
+                                      </div>
+                                     
+                                    </div>
+                                  </div>
+                    </div>
+                    <div class="col l6 m6 s12">
+                            <div class="card horizontal">
+                                    <div class="card-image">
+                                      <img src="/img/label.png">
+                                    </div>
+                                    <div class="card-stacked">
+                                      <div class="card-content">
+                                          <h5><b>НАДЁЖНОСТЬ</b></h5>
+                                            <p>У нас вы можете купить любой тур – от пляжного до лечебно-оздоровительного, а также заказать авиабилеты, визу и аренду транспорта.</p>
+                                      </div>
+                                     
+                                    </div>
+                                  </div>
+                    </div>
+                    <div class="col l6 m6 s12">
+                            <div class="card horizontal">
+                                    <div class="card-image">
+                                      <img src="/img/label.png">
+                                    </div>
+                                    <div class="card-stacked">
+                                      <div class="card-content">
+                                          <h5><b>НАДЁЖНОСТЬ</b></h5>
+                                            <p>У нас вы можете купить любой тур – от пляжного до лечебно-оздоровительного, а также заказать авиабилеты, визу и аренду транспорта.</p>
+                                      </div>
+                                     
+                                    </div>
+                                  </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="with-form">
+
+        <div class="container">
+            <div class="row">
+                <div class=" col l6 m6 s12"></div>
+                <div class=" col l6 m6 s12"></div>
+            </div>
+        </div>
+    </section> 
+
+
+    <section class="container hot-proposites center">
+            <h3>МЫ РЕКОМЕНДУЕМ</h3>
+            <p class="pre-title">За все это время нам удалось собрать профессиональную команду сотрудников, которые не только качественно выполняют все задачи турагенства, но и смогли создать большой круг постоянных клиентов. О нас можно услышать только хорошие и </p>
+    
+    
+            <div class="row hottest">
+                <div class="col l4 m6 s12">
+                        <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="hot-labla" src="/img/hot.png" alt="">
+                                    <div class="card-wrap">
+                                        <span class="card-title">
+                                            <p class="the-title">Card title</p>
+                                            <p class="price">10000 <span>грн</span> </p>
+                                        </span>
+                                  </div>
+                                </div>
+                                <div class="card-content">
+                                    <p class="stronger-title-card">AMARIS NUSA DUA 3*</p>
+                                    <p class="short-descrip">из Киева 25.12.2017, 10 ночей, питание BB,
+                                        цена за человека
+                                    </p>
+                                </div>
+                        </div>
+                </div>
+                <div class="col l4 m6 s12">
+                        <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                  <div class="card-wrap">
+                                        <span class="card-title">
+                                            <p class="the-title">Card title</p>
+                                            <p class="price">10000 <span>грн</span> </p>
+                                        </span>
+                                  </div>
+                                </div>
+                                <div class="card-content">
+                                    <p class="stronger-title-card">AMARIS NUSA DUA 3*</p>
+                                    <p class="short-descrip">из Киева 25.12.2017, 10 ночей, питание BB,
+                                        цена за человека
+                                    </p>
+                                </div>
+                        </div>
+                </div>
+                <div class="col l4 m6 s12">
+                        <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                  <div class="card-wrap">
+                                        <span class="card-title">
+                                            <p class="the-title">Card title</p>
+                                            <p class="price">10000 <span>грн</span> </p>
+                                        </span>
+                                  </div>
+                                </div>
+                                <div class="card-content">
+                                    <p class="stronger-title-card">AMARIS NUSA DUA 3*</p>
+                                    <p class="short-descrip">из Киева 25.12.2017, 10 ночей, питание BB,
+                                        цена за человека
+                                    </p>
+                                </div>
+                        </div>
+                </div>
+                <div class="col l4 m6 s12">
+                        <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                  <div class="card-wrap">
+                                        <span class="card-title">
+                                            <p class="the-title">Card title</p>
+                                            <p class="price">10000 <span>грн</span> </p>
+                                        </span>
+                                  </div>
+                                </div>
+                                <div class="card-content">
+                                    <p class="stronger-title-card">AMARIS NUSA DUA 3*</p>
+                                    <p class="short-descrip">из Киева 25.12.2017, 10 ночей, питание BB,
+                                        цена за человека
+                                    </p>
+                                </div>
+                        </div>
+                </div>
+                <div class="col l4 m6 s12">
+                        <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                  <div class="card-wrap">
+                                        <span class="card-title">
+                                            <p class="the-title">Card title</p>
+                                            <p class="price">10000 <span>грн</span> </p>
+                                        </span>
+                                  </div>
+                                </div>
+                                <div class="card-content">
+                                    <p class="stronger-title-card">AMARIS NUSA DUA 3*</p>
+                                    <p class="short-descrip">из Киева 25.12.2017, 10 ночей, питание BB,
+                                        цена за человека
+                                    </p>
+                                </div>
+                        </div>
+                </div>
+                <div class="col l4 m6 s12">
+                        <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                  <div class="card-wrap">
+                                        <span class="card-title">
+                                            <p class="the-title">Card title</p>
+                                            <p class="price">10000 <span>грн</span> </p>
+                                        </span>
+                                  </div>
+                                </div>
+                                <div class="card-content">
+                                    <p class="stronger-title-card">AMARIS NUSA DUA 3*</p>
+                                    <p class="short-descrip">из Киева 25.12.2017, 10 ночей, питание BB,
+                                        цена за человека
+                                    </p>
+                                </div>
+                        </div>
+                </div>
+               
+            </div>
+    
+            <a class="waves-effect waves-light btn-large">ЗАГРУЗИТЬ ЕЩЕ</a>
+    
+        </section>
+
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+      $(window).on('load', function () {
+        $preloader = $('#preload-wr');
+        //   $loader = $preloader.find('.loader');
+        // $loader.fadeOut();
+        $preloader.delay(250).fadeOut('slow');
+      });
+    </script>
+</body>
+</html>
