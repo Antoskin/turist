@@ -30,8 +30,18 @@ body {
   margin-bottom: 100px;
 }
 
-.pre-title {
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+p {
+  font-family: 'regular';
   font-size: 13px;
+}
+
+.pre-title {
+  /*font-size: 13px;*/
   font-family: "regular";
   color: #444343;
   line-height: 1.625;
@@ -69,12 +79,7 @@ body h5 {
   background-size: cover;
 }
 
-p {
-  margin: 0;
-}
-
 header {
-  padding: 0 5px;
   height: 108px;
 }
 
@@ -170,7 +175,7 @@ body .new_os .new_f-form-submit:hover, body .new_f-dropdown-bottom-btn:hover {
 
 .slider-with-module .indicators {
   position: absolute;
-  top: 213px;
+  /* top: 213px;*/
 }
 
 .hot-proposites h3 {
@@ -179,7 +184,6 @@ body .new_os .new_f-form-submit:hover, body .new_f-dropdown-bottom-btn:hover {
 
 .hot-proposites .hottest {
   margin-top: 60px;
-  padding: 0 10px;
 }
 
 .hot-proposites .hottest .card {
@@ -219,7 +223,7 @@ body .new_os .new_f-form-submit:hover, body .new_f-dropdown-bottom-btn:hover {
 
 .hot-proposites .hottest .short-descrip {
   text-align: left;
-  font-size: 13px;
+  /* font-size: 13px;*/
 }
 
 .hot-proposites .hottest .price {
@@ -241,11 +245,6 @@ body .new_os .new_f-form-submit:hover, body .new_f-dropdown-bottom-btn:hover {
 }
 
 /*преимущества*/
-.our-pluses {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .our-pluses h3 {
   margin-bottom: 50px;
 }
@@ -270,7 +269,7 @@ body .new_os .new_f-form-submit:hover, body .new_f-dropdown-bottom-btn:hover {
 .our-pluses .tali .col .card-content p {
   text-align: left;
   max-width: 270px;
-  font-size: 13px;
+  /*font-size: 13px*/
 }
 
 /*with form*/
@@ -281,12 +280,125 @@ body .new_os .new_f-form-submit:hover, body .new_f-dropdown-bottom-btn:hover {
   background-size: cover;
 }
 
-.recomendation .recomendation-boxes .col {
-  border: 1px solid #e51c11;
-  min-height: 350px;
+.recomendation h3 {
+  color: #272727 !important;
 }
 
-.recomendation .recomendation-boxes .col .card-image {
-  background: url("/img/ch.png");
+.recomendation .hottest .card .card-image {
+  border-color: #1c1c8f !important;
+}
+
+.recomendation .card-image .card-title {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.with-sea {
+  height: 396px;
+  background: url("/img/sea.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.with-sea .sea-card {
+  display: flex;
+  justify-content: center;
+}
+
+.with-sea .sea-card .card {
+  margin-top: 40px;
+  width: 430px;
+  background: transparent;
+}
+
+.with-sea .sea-card .card .card-image {
+  width: 100%;
+  height: 225px;
+  background: rgba(42, 54, 147, 0.795);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  padding: 0 15px;
+}
+
+.with-sea .sea-card .card .card-image h3 {
+  margin: 10px 0;
+}
+
+.with-sea .sea-card .card .card-image p {
+  font-family: 'light';
+}
+
+.with-sea .sea-card .card .card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+
+.with-sea .sea-card .card .card-content p span {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.find-tour-text-block {
+  margin-bottom: 110px !important;
+}
+
+.find-tour-text-block h4 {
+  font-family: 'regular';
+  font-weight: bold;
+  font-size: 25px;
+  margin: 50px 0 30px 0;
+}
+
+.find-tour-text-block p {
+  margin-bottom: 20px;
+  font-family: 'semi';
+}
+
+.blue-line-with-chinese {
+  height: 159px;
+  background: #2a3693;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.blue-line-with-chinese .container {
+  position: relative;
+}
+
+.blue-line-with-chinese .container .girl {
+  position: absolute;
+  left: 0;
+  bottom: -47px;
+  width: 272px;
+}
+
+.blue-line-with-chinese .container .btn-large {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+}
+
+.blue-line-with-chinese .container h3 {
+  margin: 0 0 10px 0;
+}
+
+.blue-line-with-chinese .container p {
+  color: #fff;
+  font-size: 14px;
+}
+
+@media (max-width: 1160px) {
+  .girl {
+    display: none;
+  }
+  .blue-line-with-chinese .container .btn-large {
+    position: inherit;
+    margin-top: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
