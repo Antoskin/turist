@@ -162,7 +162,12 @@ body .new_os .new_f-form-submit, body .new_f-dropdown-bottom-btn
                     bottom: 0;
                     width: 100%;
                     height: 120px;
-                    background: linear-gradient(to top, rgba(0, 0, 0, 0.74), transparent)
+                    background: linear-gradient(to top, rgba(0, 0, 0, 0.74), transparent);
+                    .the-title {
+                        font-size: 21px;
+                        margin: 0;
+                        font-family: 'light';
+                    }
                 }
             }
             &:hover {
@@ -179,10 +184,13 @@ body .new_os .new_f-form-submit, body .new_f-dropdown-bottom-btn
             /* font-size: 13px;*/
         }
         .price {
-            font-weight: 400; 
+            font-weight: 'semi'; 
+            margin: 0;
+            font-size: 20px;
             span {
                 font-weight: 100;
                 font-size: 14px;
+                font-family: 'light'
             }
         }
         .hot-labla {
@@ -207,6 +215,8 @@ body .new_os .new_f-form-submit, body .new_f-dropdown-bottom-btn
         max-width: 870px;
         margin: 0 auto;
         .col {
+            display: flex;
+            justify-content: center;
             .horizontal {box-shadow: none}
             .card-content {
                 padding: 4px 10px 17px;
@@ -319,6 +329,26 @@ body .new_os .new_f-form-submit, body .new_f-dropdown-bottom-btn
   
 }
 
+
+/*new offers */
+.background-new-offer {
+    background: url('/img/camels.png') no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+
+/*footer*/
+.footer {
+    height: 484px;
+    background: url('/img/freed.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
 
 @media (max-width: 1160px) {
     .girl {display: none;}
