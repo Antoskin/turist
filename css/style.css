@@ -132,6 +132,11 @@ header .location-order .order-btn a {
   margin-top: 25px;
 }
 
+/*result.css*/
+.resultjob .new_r-container {
+  margin-top: 20px;
+}
+
 body .new_os .new_f-form-submit, body .new_f-dropdown-bottom-btn {
   background: #e51c11 !important;
   transition: 0.3s linear !important;
@@ -143,6 +148,19 @@ body .new_os .new_f-form-submit:hover, body .new_f-dropdown-bottom-btn:hover {
   background: #be170f !important;
 }
 
+body .new_r-item .new_r-item-price, body .new_r-currency-switch label input:checked + span {
+  background: #e51c11 !important;
+}
+
+body .new_r-item:hover .new_r-item-body {
+  border-color: #e51c11;
+}
+
+body .new_r-item:hover .new_r-item-price {
+  color: #fff;
+}
+
+/*result.css*/
 #nav-mobile {
   display: flex;
   justify-content: space-between;
@@ -174,8 +192,7 @@ body .new_os .new_f-form-submit:hover, body .new_f-dropdown-bottom-btn:hover {
 }
 
 .slider-with-module .indicators {
-  position: absolute;
-  /* top: 213px;*/
+  top: 213px;
 }
 
 .hot-proposites h3 {
@@ -416,6 +433,7 @@ body .new_os .new_f-form-submit:hover, body .new_f-dropdown-bottom-btn:hover {
 /*footer*/
 .footer {
   height: 484px;
+  box-sizing: border-box;
   background: url("/img/freed.png") no-repeat;
   background-position: center;
   background-size: cover;
@@ -425,6 +443,80 @@ body .new_os .new_f-form-submit:hover, body .new_f-dropdown-bottom-btn:hover {
   align-items: center;
 }
 
+.footer .row {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer h3 {
+  margin-top: 0;
+}
+
+.footer .undoh3 {
+  font-size: 14px;
+}
+
+.footer ul li {
+  font-size: 11px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  font-family: 'light';
+}
+
+.footer ul li i {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.footer .bottom-form-place-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer .bottom-form-place-wrap .bottom-form-place {
+  width: 400px;
+  height: 380px;
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+/*scroll bar*/
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #3d3d3d;
+  -webkit-box-shadow: 0px 1px 1px #fff inset;
+  box-shadow: 0px 1px 1px #fff inset;
+  background-image: url(https://yraaa.ru/_pu/24/59610063.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar-button {
+  background-image: url(style.css);
+  background-repeat: no-repeat;
+  width: 1px;
+  height: 0px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #d6d6d6;
+  -webkit-box-shadow: 0px 0px 3px #000 inset;
+  box-shadow: 0px 0px 3px #000 inset;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-resizer {
+  background-image: url(style.css);
+  background-repeat: no-repeat;
+  width: 3px;
+  height: 0px;
+}
+
 @media (max-width: 1160px) {
   .girl {
     display: none;
@@ -432,6 +524,42 @@ body .new_os .new_f-form-submit:hover, body .new_f-dropdown-bottom-btn:hover {
   .blue-line-with-chinese .container .btn-large {
     position: inherit;
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 948px) {
+  .slider-with-module .modul-mainer {
+    top: 175px;
+  }
+}
+
+@media (max-width: 600px) {
+  body h3 {
+    font-size: 21px;
+  }
+  .with-form {
+    background-position: left;
+  }
+  .footer .row {
+    flex-direction: column;
+  }
+  .footer {
+    height: 100%;
+    padding: 20px 0;
+  }
+  .blue-line-with-chinese h3 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .slider-with-module .modul-mainer {
+    top: 66px;
+  }
+  .slider-with-module .carousel.carousel-slider .carousel-item h2 {
+    font-size: 21px;
+    margin-top: 13px;
+    margin-bottom: -21px;
   }
 }
 /*# sourceMappingURL=style.css.map */

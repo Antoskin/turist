@@ -18,8 +18,8 @@
 
     <div id="preload-wr"></div>
 
-    <header class="wow fadein">
-        <div class="container hide-on-med-and-down">
+    <header class="hide-on-med-and-down">
+        <div class="container ">
                 <div class="row">
                         <div class="col l4 graf-phone">
                             <span class="graf">Работаем с 9:00 до 19:00</span>
@@ -46,6 +46,8 @@
         <div class="nav-wrapper">
         <!-- <a href="#" class="brand-logo">Logo</a> -->
             <div class="container" >
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
                     <ul id="nav-mobile" class="hide-on-med-and-down">
                             <li><a href="#">Горящие туры</a></li>
                             <li><a href="#">Календарь туров</a></li>
@@ -101,7 +103,9 @@
         </div>
 
     </section> 
-
+    <div class="container">
+            <div class="resultjob"></div>
+    </div>
     <section class="container hot-proposites center">
         <h3>ГОРЯЩИЕ ПРЕДЛОЖЕНИЯ</h3>
         <p class="pre-title">За все это время нам удалось собрать
@@ -115,8 +119,8 @@
                Украины и мира.</p>
 
 
-        <div class="row hottest">
-            <div class="col l4 m6 s12">
+        <div class="row hottest targ-show-more">
+            <div class="col l4 m6 s12 ">
                     <div class="card wow slideInUp">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="hot-labla" src="/img/hot.png" alt="">
@@ -693,17 +697,17 @@
                     <div class="row">
                         <div class="col l6 m6 s12">
                             <h3>НЕ СМОГЛИ ПОДОБРАТЬ ТУР?</h3>
-                            <p>Оставьте заявку и наш менеджер свяжется с вами!</p>
+                            <p class="undoh3">Оставьте заявку и наш менеджер свяжется с вами!</p>
                             <ul>
-                                <li>ул. Никольско-Ботаническая 3, оф. 1</li>
-                                <li>+380 (67) 509 10 02</li>
-                                <li>travel@gmail.com</li>
-                                <li>travel1234</li>
+                                <li><i class="material-icons">home</i>ул. Никольско-Ботаническая 3, оф. 1</li>
+                                <li><i class="material-icons">phone_in_talk</i>+380 (67) 509 10 02</li>
+                                <li><i class="material-icons">email</i>travel@gmail.com</li>
+                                <li><i class="material-icons">thumb_up</i>travel1234</li>
                             </ul>
                         </div>
-                        <div class="col l6 m6 s12">
+                        <div class="col l6 m6 s12 bottom-form-place-wrap ">
                             
-                            <div class="bottom-form-place">
+                            <div class="bottom-form-place wow zoomIn">
 
                             </div>
 
@@ -711,6 +715,30 @@
                     </div>
                 </div>
             </section>
+
+
+
+
+          
+
+
+
+            <!-- mobi menu -->
+            <ul id="slide-out" class="side-nav">
+                    <li><div class="user-view">
+                      <div class="background">
+                        <img src="/img/ff.png">
+                      </div>
+                      <a href="#!user"><img class="" src="/img/l.png"></a>
+                      <a href="#!name"><span class="white-text name">Работаем с 9:00 до 19:00</span></a>
+                      <a href="#!email"><span class="white-text email"><a href="tel:+380446589909">+38 (044) 658-99-09</a></span></a>
+                    </div></li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                    <li><a href="#!">Second Link</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a class="subheader">Subheader</a></li>
+                    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                  </ul>
 
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/materialize-css/dist/js/materialize.min.js"></script>
